@@ -144,14 +144,3 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
 'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
 }
-
-import os
-
-ALLOWED_HOSTS = ['*']
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-    ...
-]
