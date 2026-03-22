@@ -26,6 +26,38 @@ It allows users to manage movies and directors with full CRUD operations.
 
 ---
 
+
+## 🔐 Authentication (JWT)
+
+This API uses JWT authentication.
+
+### Get Token
+
+POST `/api/token/`
+
+### Refresh Token
+
+POST `/api/token/refresh/`
+
+Add token in headers:
+Authorization: Bearer <your_token>
+
+---
+
+## 🔎 Filtering & Search
+
+You can filter movies using query params:
+
+* `/movies/?title=avatar`
+* `/movies/?director=1`
+
+### Supports:
+
+* Search
+* Filtering
+* Pagination
+
+
 ## 🛠️ Setup Instructions
 
 ```bash
